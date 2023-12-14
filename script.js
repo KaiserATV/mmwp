@@ -1,8 +1,15 @@
 window.addEventListener("load",(e) => {
-    // document.getElementsByClassName("kat")[0].addEventListener("click",(e)=>{
-    //     console.log("ey");
-    //     window.location.href="index.html";
-    // });
+   const expAnd = document.getElementsByClassName("expand");
+
+   for(const c of expAnd){
+    c.addEventListener("click",(e)=>{
+        if(c.getElementsByClassName("unter")[0].style.display === ("none")){
+            c.getElementsByClassName("unter")[0].style.display="block";
+        }else{
+            c.getElementsByClassName("unter")[0].style.display="none";
+        }
+        });
+   }
 
     const dropDowns = document.getElementsByClassName("kat");
     for(const c of dropDowns){

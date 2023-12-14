@@ -15,51 +15,120 @@ body {
   font-family: 'Times New Roman', Times, serif;
 }
 
-#auswahl{
-  position: sticky;
-  top: 0;
-  z-index: 1;
-  height: 5%;
-  width: 100%;
-  background-color: #d7cae6;
-}
-.kat{
-  position: relative;
-  float: left;
-  margin-left: 2%;
-  width: 7%;
-  height: 100%;
-  line-height: 300%;
-  cursor: pointer;
-}
-.kat > div{
-  height: 100%;
+@media (min-width:840px) {
+  #auswahl{
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    height: 5%;
+    width: 100%;
+    background-color: #d7cae6;
+  }
+  .kat{
+    position: relative;
+    float: left;
+    margin-left: 2%;
+    width: 7%;
+    height: 100%;
+    line-height: 300%;
+    cursor: pointer;
+  }
+  .kat > div{
+    height: 100%;
+  }
+  
+  #auswahl > div:hover{
+    background-color: #947fce;
+  }
+  .link{
+    visibility: collapse;
+    width: 100%;
+  }
+  .link > a{
+    color: #551A8B;
+    background-color: white;
+    text-decoration: none;
+    float: left;
+    width: 100%;
+    height: fit-content;
+    text-align: center;
+  }
+  .link > a:hover{
+    background-color: #ddd3fa;
+  }  
+  .kategorien{
+    height: 0;
+    visibility: collapse;
+  }
 }
 #homebutton{
   text-decoration: none;
   color: black;
 }
+@media (max-width:840px){
+  .coolerBttn{
+    position: absolute;
+    right: 0;
+    width: 100%;
+    height: fit-content;
+  }
 
 
-#auswahl > div:hover{
-  background-color: #947fce;
+
+  #auswahl{
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    height: fit-content;
+    width: 100%;
+    background-color: #d7cae6;
+  }
+  .kat,.kat > div{
+   display: none;
+  }
+  .kategorien{
+    display: none;
+    height: 100%;
+    width: 100%;
+    background-color: #947fce;
+  }
+  .auswahl{
+    height: 10%;
+  }
+  .unter{
+    display: none;
+    width: 100%;
+  }
+  .unter > a{
+    text-decoration: none;
+    color: #551A8B;
+    float: left;
+    width: 100%;
+    background-color: #bda5ff;
+  }
+  .unter > a:hover{
+    background-color: #cfbefd;
+  }
+  .ueber{
+    cursor: pointer;
+    height:33%;
+    width: 100%;
+  }
+  .reihe{
+    display: flex;
+    width: 100%;
+  }
+  .button{
+    position: absolute;
+    width: fit-content;
+    right: 0;
+  }
+  .name{
+    width: fit-content;
+  }
+
 }
-.link{
-  visibility: collapse;
-  width: 100%;
-}
-.link > a{
-  color: #551A8B;
-  background-color: white;
-  text-decoration: none;
-  float: left;
-  width: 100%;
-  height: fit-content;
-  text-align: center;
-}
-.link > a:hover{
-  background-color: #ddd3fa;
-}
+
 
 .container {
   position: relative;
