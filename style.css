@@ -64,11 +64,6 @@ body {
   width: 100%;
 }
 
-.header-container {
-  position: relative;
-  display: flex;
-  
-}
 
 .title-box {
   position: absolute;
@@ -109,12 +104,18 @@ body {
   }
 }
 
-img {
+#hero {
   animation: 2s slide-down-image cubic-bezier(0.075, 0.82, 0.165, 1);
   width: 100%;
   height: 40vh;
   object-fit: cover;
   z-index: -2;
+}
+
+#bild1 {
+
+  width: 100%;
+  height: 100%;
   
 }
 
@@ -130,7 +131,6 @@ img {
   grid-column: 1 ;
   grid-row: 1;
   background-color: #ffffff;
-  height: 100vh;
 }
 
 .subgrid-2 {
@@ -149,6 +149,12 @@ img {
   font-size: 1.5em;
   margin-bottom:2em;
 }
+
+.subgrid-2 p {
+  font-size: 1.5em;
+  margin-bottom:2em;
+}
+
 .subgrid-2 p,
 .subgrid-2 ul,
 .subgrid-2 li {
