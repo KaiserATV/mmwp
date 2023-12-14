@@ -52,10 +52,8 @@ body {
 
 .container {
   position: relative;
-  margin-top: 2.5%;
   display: grid;
   width: 100%;
-  
 }
 
 .header-container {
