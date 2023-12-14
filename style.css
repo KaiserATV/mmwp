@@ -64,6 +64,12 @@ body {
   width: 100%;
 }
 
+.header-container {
+  position: sticky;
+  top: 5%;
+  display: flex;
+  z-index: -2;  
+}
 
 .title-box {
   position: absolute;
