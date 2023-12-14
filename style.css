@@ -88,6 +88,7 @@ body {
     right: 0%;
     width: 11%;
     height: fit-content;
+    background-color: #d7cae6;
   }
   #coolerBttn > div{
     transition: transform .5s cubic-bezier(0.075, 0.82, 0.165, 1);
@@ -107,7 +108,7 @@ body {
     display: none;
     height: 100%;
     width: 100%;
-    background-color: #947fce;
+    background-color: #d7cae6;
   }
   .auswahl{
     height: 10%;
@@ -115,17 +116,18 @@ body {
   .unter{
     width: 100%;
   }
-  .unter > a{
+  .unter > a {
     text-decoration: none;
     color: #551A8B;
     float: left;
     width: 100%;
-    background-color: #bda5ff;
+    background-color: #d7cae6;
   }
   .unter > a:hover{
-    background-color: #cfbefd;
+    background-color: #ddd3fa;
   }
   .ueber{
+    font-family: 'Times New Roman', Times, serif;
     z-index: 1;
     cursor: pointer;
     height:33%;
@@ -135,6 +137,7 @@ body {
     cursor: pointer;
     display: flex;
     width: 100%;
+    font-family: 'Times New Roman', Times, serif;
   }
   .button{
     cursor: pointer;
@@ -273,13 +276,17 @@ body {
   background-color: #ffffff;
 }
 
+
 .footer-container {
   position: relative;
   bottom:0;
   width: calc(100% - 100px); /* Breite abzüglich der gewünschten linken und rechten Margins */
-  height: 15vh;
+  height: 20vh;
   background-color: #d7cae6;
   margin-left: 50px; /* Linker Margin */
   margin-right: 50px; /* Rechter Margin */
   margin-bottom: 0;
+  padding: 10px;
+  text-align: center;
 }
+
