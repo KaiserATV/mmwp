@@ -142,6 +142,14 @@ body {
   background-color: #ffffff;
 }
 
+.text-box {
+  background-color: #ddd3fa;
+  border-radius: 20px;
+  padding:10px;
+  margin-top: 50px;
+  margin-left: 30px;
+}
+
 .subgrid-2 {
   padding: 50px;
   grid-column: 2 ;
