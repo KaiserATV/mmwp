@@ -81,6 +81,7 @@ body {
     right: 5%;
     width: fit-content;
     height: fit-content;
+    background-color: #d7cae6;
   }
   #auswahl{
     position: sticky;
@@ -97,7 +98,7 @@ body {
     display: none;
     height: 100%;
     width: 100%;
-    background-color: #947fce;
+    background-color: #d7cae6;
   }
   .auswahl{
     height: 10%;
@@ -105,17 +106,18 @@ body {
   .unter{
     width: 100%;
   }
-  .unter > a{
+  .unter > a {
     text-decoration: none;
     color: #551A8B;
     float: left;
     width: 100%;
-    background-color: #bda5ff;
+    background-color: #d7cae6;
   }
   .unter > a:hover{
-    background-color: #cfbefd;
+    background-color: #ddd3fa;
   }
   .ueber{
+    font-family: 'Times New Roman', Times, serif;
     z-index: 1;
     cursor: pointer;
     height:33%;
@@ -125,6 +127,7 @@ body {
     cursor: pointer;
     display: flex;
     width: 100%;
+    font-family: 'Times New Roman', Times, serif;
   }
   .button{
     cursor: pointer;
