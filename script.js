@@ -1,8 +1,8 @@
 window.addEventListener("load",(e) => {
-   const expAnd = document.getElementsByClassName("expand");
+   const expAnd = document.getElementsByClassName("reihe");
 
     let ausWaShow=false;
-    document.getElementsByClassName("coolerBttn")[0].addEventListener("mousedown",(e)=>{
+    document.getElementsByClassName("coolerBttn")[0].addEventListener("click",(e)=>{
         if(ausWaShow === false){
             document.getElementsByClassName("kategorien")[0].style.display="block";
             ausWaShow=true
@@ -16,10 +16,12 @@ window.addEventListener("load",(e) => {
 
    for(const c of expAnd){
     c.addEventListener("click",(e)=>{
-        if(c.getElementsByClassName("unter")[0].style.display === ("none")){
-            c.getElementsByClassName("unter")[0].style.display="block";
+        if(c.getAttribute("aria-expanded")==="false"){
+            c.nextElementSibling.style.display="block";
+            c.setAttribute("aria-expanded","true");
         }else{
-            c.getElementsByClassName("unter")[0].style.display="none";
+            c.setAttribute("aria-expanded","false");
+            c.nextElementSibling.style.display="none";
         }
         });
    }

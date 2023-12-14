@@ -10,6 +10,10 @@ html,body{
   height: 100%;
   width: 100%;
 }
+button{
+  border: none;
+  background-color: transparent;
+}
 
 body {
   font-family: 'Times New Roman', Times, serif;
@@ -99,7 +103,6 @@ body {
     height: 10%;
   }
   .unter{
-    display: none;
     width: 100%;
   }
   .unter > a{
@@ -113,11 +116,13 @@ body {
     background-color: #cfbefd;
   }
   .ueber{
+    z-index: 1;
     cursor: pointer;
     height:33%;
     width: 100%;
   }
   .reihe{
+    cursor: pointer;
     display: flex;
     width: 100%;
   }
@@ -178,16 +183,16 @@ body {
 }
 
 @keyframes slide-down-image {
-  from {
+  0% {
     transform: translateY(-70%);
   }
-  to {
+  50% {
     transform: translateY(0);
   }
 }
 
 #hero {
-  animation: 2s slide-down-image cubic-bezier(0.075, 0.82, 0.165, 1);
+  animation: 3s slide-down-image cubic-bezier(0.075, 0.82, 0.165, 1);
   width: 100%;
   height: 40vh;
   object-fit: cover;
