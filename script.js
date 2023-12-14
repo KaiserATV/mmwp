@@ -2,7 +2,7 @@ window.addEventListener("load",(e) => {
    const expAnd = document.getElementsByClassName("reihe");
 
     let ausWaShow=false;
-    document.getElementsByClassName("coolerBttn")[0].addEventListener("click",(e)=>{
+    document.getElementById("coolerBttn").addEventListener("click",(e)=>{
         if(ausWaShow === false){
             document.getElementsByClassName("kategorien")[0].style.display="block";
             ausWaShow=true
@@ -18,6 +18,7 @@ window.addEventListener("load",(e) => {
     c.addEventListener("click",(e)=>{
         if(c.getAttribute("aria-expanded")==="false"){
             c.nextElementSibling.style.display="block";
+
             c.setAttribute("aria-expanded","true");
         }else{
             c.setAttribute("aria-expanded","false");
