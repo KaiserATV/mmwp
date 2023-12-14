@@ -65,16 +65,16 @@ body {
   text-decoration: none;
   color: black;
 }
+
+
 @media (max-width:840px){
   .coolerBttn{
+    cursor: pointer;
     position: absolute;
-    right: 0;
-    width: 100%;
+    right: 5%;
+    width: fit-content;
     height: fit-content;
   }
-
-
-
   #auswahl{
     position: sticky;
     top: 0;
@@ -119,6 +119,7 @@ body {
     width: 100%;
   }
   .button{
+    cursor: pointer;
     position: absolute;
     width: fit-content;
     right: 0;
@@ -138,7 +139,7 @@ body {
 
 .header-container {
   position: sticky;
-  top: 5%;
+  top: 2%;
   display: flex;
   z-index: -2;  
 }

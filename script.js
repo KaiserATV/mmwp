@@ -1,6 +1,19 @@
 window.addEventListener("load",(e) => {
    const expAnd = document.getElementsByClassName("expand");
 
+    let ausWaShow=false;
+    document.getElementsByClassName("coolerBttn")[0].addEventListener("mousedown",(e)=>{
+        if(ausWaShow === false){
+            document.getElementsByClassName("kategorien")[0].style.display="block";
+            ausWaShow=true
+        }else{
+            document.getElementsByClassName("kategorien")[0].style.display="none";
+            ausWaShow=false;
+        }
+
+    });
+
+
    for(const c of expAnd){
     c.addEventListener("click",(e)=>{
         if(c.getElementsByClassName("unter")[0].style.display === ("none")){
