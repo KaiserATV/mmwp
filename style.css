@@ -33,9 +33,9 @@ body {
   }
   .kat{
     position: relative;
+    text-align: center;
     float: left;
-    margin-left: 2%;
-    width: 7%;
+    width: 10%;
     height: 100%;
     line-height: 300%;
     cursor: pointer;
@@ -67,20 +67,30 @@ body {
     height: 0;
     visibility: collapse;
   }
+  #homebutton{
+    text-decoration: none;
+    color: black;
+  }
 }
-#homebutton{
-  text-decoration: none;
-  color: black;
-}
+
 
 
 @media (max-width:840px){
+  #homebutton{
+    width: 60%;
+    text-decoration: none;
+    color: black;
+  }
   #coolerBttn{
     cursor: pointer;
     position: absolute;
-    right: 5%;
-    width: fit-content;
+    text-align: center;
+    right: 0%;
+    width: 11%;
     height: fit-content;
+  }
+  #coolerBttn > div{
+    transition: transform .5s cubic-bezier(0.075, 0.82, 0.165, 1);
   }
   #auswahl{
     position: sticky;
@@ -130,7 +140,8 @@ body {
     cursor: pointer;
     position: absolute;
     width: fit-content;
-    right: 0;
+    right: 5%;
+    transition: transform .5s cubic-bezier(0.075, 0.82, 0.165, 1);
   }
   .name{
     width: fit-content;

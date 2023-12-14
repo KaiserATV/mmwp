@@ -2,12 +2,15 @@ window.addEventListener("load",(e) => {
    const expAnd = document.getElementsByClassName("reihe");
 
     let ausWaShow=false;
-    document.getElementById("coolerBttn").addEventListener("click",(e)=>{
+    const cB =  document.getElementById("coolerBttn");
+    cB.addEventListener("click",(e)=>{
         if(ausWaShow === false){
             document.getElementsByClassName("kategorien")[0].style.display="block";
+            cB.childNodes[0].style.transform="rotate(90deg)";
             ausWaShow=true
         }else{
             document.getElementsByClassName("kategorien")[0].style.display="none";
+            cB.childNodes[0].style.transform="rotate(0deg)";
             ausWaShow=false;
         }
 
@@ -18,11 +21,12 @@ window.addEventListener("load",(e) => {
     c.addEventListener("click",(e)=>{
         if(c.getAttribute("aria-expanded")==="false"){
             c.nextElementSibling.style.display="block";
-
             c.setAttribute("aria-expanded","true");
+            c.getElementsByClassName("button")[0].style.transform="rotate(90deg)";
         }else{
             c.setAttribute("aria-expanded","false");
             c.nextElementSibling.style.display="none";
+            c.getElementsByClassName("button")[0].style.transform="rotate(0deg)";
         }
         });
    }
