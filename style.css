@@ -32,6 +32,12 @@ body {
 .kat > div{
   height: 100%;
 }
+#homebutton{
+  text-decoration: none;
+  color: black;
+}
+
+
 #auswahl > div:hover{
   background-color: #947fce;
 }
@@ -49,7 +55,7 @@ body {
   text-align: center;
 }
 .link > a:hover{
-  background-color: black;
+  background-color: #ddd3fa;
 }
 
 .container {
