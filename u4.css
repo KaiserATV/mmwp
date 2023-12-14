@@ -1,79 +1,62 @@
-body {
-  font-family: 'Times New Roman', Times, serif;
+*{
   margin: 0;
+  padding: 0;
+  border: 0;
+}
+html,body{
+  height: 100%;
+  width: 100%;
 }
 
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #d7cae6;
-    position: fixed;
-    top: 0;
-    width: 100%;
-  }
+body {
+  font-family: 'Times New Roman', Times, serif;
+}
 
-  li {
-    float: left;
-  }
-  
-  li a {
-    display: block;
-    color: black;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-  }
-
-  li a, .dropbtn {
-    display: inline-block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-  }
-  
-  li a:hover:not(.active), .dropdown:hover .dropbtn {
-    background-color: #947fce;
-  }
-  
-  .active {
-    background-color: #947fce;
-  }
-
-  li.dropdown {
-    display: inline-block;
-  }
-
-  .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-  }
-  
-  .dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    text-align: left;
-  }
-  
-  .dropdown-content a:hover {background-color: #f1f1f1;}
-  
-  .dropdown:hover .dropdown-content {
-    display: block;
-  }
+#auswahl{
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  height: 5%;
+  width: 100%;
+  background-color: black;
+}
+.kat{
+  position: relative;
+  float: left;
+  background-color: red;
+  width: 7%;
+  height: 100%;
+  text-align: center;
+  line-height: 300%;
+  cursor: pointer;
+}
+.kat > div{
+  height: 100%;
+}
+#auswahl > div:hover{
+  background-color: green;
+}
+.link{
+  visibility: collapse;
+  width: 100%;
+}
+.link > a{
+  background-color: white;
+  float: left;
+  width: 100%;
+  height: fit-content;
+  text-align: center;
+}
+.link > a:hover{
+  background-color: black;
+}
 
 .container {
-    display: grid;
-    margin-top: 30px;
-    height:100%;
-    width:100%;
+  position: absolute;
+  top: 5%;
+  display: grid;
+  height:100%;
+  width:100%;
 }
 
   .header-container {
