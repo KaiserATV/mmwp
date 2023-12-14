@@ -1,3 +1,6 @@
+
+/*Media Query bei 840*/
+
 *{
   margin: 0;
   padding: 0;
@@ -23,9 +26,9 @@ body {
 .kat{
   position: relative;
   float: left;
+  margin-left: 2%;
   width: 7%;
   height: 100%;
-  text-align: center;
   line-height: 300%;
   cursor: pointer;
 }
