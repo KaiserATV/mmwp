@@ -16,6 +16,9 @@ body {
 }
 
 @media (min-width:840px) {
+  .coolerBttn{
+    display: none;
+  }
   #auswahl{
     position: sticky;
     top: 0;
