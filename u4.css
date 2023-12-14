@@ -40,7 +40,9 @@ body {
   width: 100%;
 }
 .link > a{
+  color: #551A8B;
   background-color: white;
+  text-decoration: none;
   float: left;
   width: 100%;
   height: fit-content;
